@@ -1,0 +1,68 @@
+<!DOCTYPE HTML>
+<!-- Nathan Lee 5/8/24-->
+
+<html lang="en">
+
+<head>
+    <title>Project 3</title>
+    <meta charset="utf-8" />
+    <script>
+        //1. Create a prompt that will ask the user for his or her name.  Add a statement that declares a variable named username and assign the variable to the value of the answer given to a JavaScript prompt.
+
+        let username = prompt("What is your name?");
+
+        //2. Add a confirm statement that will ask the user permission to use his or her name on the web page. Then, create a variable named proceed and assign the variable to the value of the answer given to a JavaScript confirm.
+        let proceed = confirm("Can this website use your name?");
+
+
+        //3. Write a traditional if - else statement using the variable called proceed that will test if the value is true or false and execute different statements depending on the answer.
+
+        //4. IF the value of the proceed variable is true, console log the text "Yes, I can use your name on this page" and the username value.
+
+        if (proceed == true) {
+            console.log("Yes, I can use your name on this page");
+            console.log(username);
+
+        }
+
+
+        //5. IF the proceed variable is false, console log the text "No, you can not use my name on this web page. Privacy Please".
+
+        else {
+            console.log(
+                "No. I cannot use your name on this page for privacy reasons. "
+            );
+            username = "       ";
+        }
+
+
+
+        //6. Prompt the user for his or her age, and store the result in a variable named age.
+
+        let age = prompt("How old are you?");
+
+
+        //7. Create an alert box that says Hi [username] ! You are [age] years old. -->
+
+        alert(`Hi ${username} ! You are ${age} years old. `);
+    </script>
+</head>
+
+<body>
+    <h2>
+        Name a situation where you would need to create an "if" statement.
+        (There are many answers to this question. )
+    </h2>
+    <p>
+        One situation where you would need to create an if statement is if you
+        need to compare two values
+    </p>
+
+    <h2>When comparing values, in what data type is the result stored?</h2>
+    <p>
+        When comparing values, the result is stored as the bool data type which
+        represents a boolean variable
+    </p>
+</body>
+
+</html>
