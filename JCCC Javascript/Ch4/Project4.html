@@ -1,28 +1,50 @@
-<!DOCTYPE HTML>
-<!-- Nathan Lee 5/8/25-->
+<!DOCTYPE HTML> 
 
-<html lang="en">
+<!-- Nathan Lee 10/30/24--> 
 
-<head>
-    <title>Project 4</title>
-    <meta charset="utf-8">
-    <script>
+<html lang="en"> 
+    <head> 
+        <title> Project 4  </title>
+        <meta charset= "utf-8">
+    </head>
+    <body>
+   <h2>1.  When would you use a switch statement in your projects?
 
-    </script>
-</head>
-
-<body>
-    <h2>
-
-    </h2>
+</h2>
     <p>
+    One situation where you would need to use a switch statement is if you wanted to display different messages for a user that change depending on their input
+   <script>
+    "use strict";
+ const favDay = prompt("What is your favorite day of the week? (e.g., Monday, Tuesday)");
 
-    </p>
+ switch (favDay.toLowerCase()) {
+    case 'sunday':
+    console.log("Your favorite day is "+ favDay)
+    break
+    case 'monday':
+    console.log("Your favorite day is "+ favDay)
+    break
+    case 'tuesday':
+    console.log("Your favorite day is "+ favDay)
+    break
+    case 'wednesday':
+    console.log("Your favorite day is "+ favDay)
+    break
+    case 'thursday':
+    console.log("Your favorite day is "+ favDay)
+    break
+    case 'friday':
+    console.log("Your favorite day is "+ favDay)
+    break
+    case 'saturday':
+    console.log("Your favorite day is "+ favDay)
+    break
+    default:
+    console.log("day not valid")
 
-    <h2></h2>
-    <p>
+    }
+   </script>
+    </body>
 
-    </p>
-</body>
-
+    
 </html>
