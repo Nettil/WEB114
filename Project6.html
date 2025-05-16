@@ -1,0 +1,45 @@
+<!DOCTYPE HTML> 
+
+<!-- Nathan Lee 11/20/24--> 
+
+<html lang="en"> 
+    <head> 
+        <title> Project 6 </title>
+        <meta charset= "utf-8">
+    </head>
+    <body>
+   <h2>
+    1. What is the purpose of a function?
+</h2>
+
+    <p>
+        A function is a reusable piece of code used for performing a specific task in a program
+    </p>
+   <script>
+    "use strict";
+    let username=prompt("Enter your name")
+    let weeklyGas= parseFloat(prompt("Enter First weekly gas total"))
+    alert("Weekly gas is " + weeklyGas)
+    let count = 0
+    let total =0
+
+    function calcAvgGas(){
+        while (weeklyGas != -1){
+            total= total + weeklyGas
+            console.log(total)
+            console.log(weeklyGas)
+            if(weeklyGas>0){
+            count= count + 1}
+            alert("Weekly gas is " + weeklyGas + ". \nWeekly gas total is " + total + "\ncount is " + count + ".")
+            weeklyGas= parseFloat(prompt("Enter your weekly gas total (Enter -1 to quit)")) 
+        
+    }
+        return total/count
+}
+    let gas=calcAvgGas()
+    confirm(username +"'s average weekly gas bill is " + gas.toFixed(2))
+   </script>
+    </body>
+
+    
+</html>
